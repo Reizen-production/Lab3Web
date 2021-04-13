@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="lab3_dropdown_listbox.css" type="text/css">
+        <title>HTML Lanjutan</title>
+        <style>
+            h1{
+            font-size: 24px;
+            color: #e7e7e7;
+            text-align: center;
+            padding: 20px 10px;
+            }
+        </style>
+    </head>
+<body>
+    <!-- Dropdown Menu -->
+    <header class="header">
+        <div class="menu-web">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown"><a href="#">Daftar Film</a>
+                    <ul class="isi-dropdown">
+                        <li><a href="#">Asia</a></li>
+                        <li><a href="#">Western</a></li>
+                        <li><a href="#">Terbaru</a></li>
+                        <li><a href="#">Populer</a></li>
+                    </ul>
+
+                <li class="dropdown"><a href="#">Tentang Kami</a>
+                    <ul class="isi-dropdown">
+                        <li><a href="#">Kontak</a></li>
+                        <li><a href="#">Donasi</a></li>
+                        <li><a href="#">Kritik dan Saran</a></li>
+                        <li><a href="#">Laporkan Film Rusak</a></li>
+                        <li><a href="#">Request Film</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <h1> Praktikum 3 </br> Dropdown Menu dan Listbox </h1>
+    <div id="isi">
+        <p><b>Menu List Multi</b></p>
+    </br>Genre Film:
+        <!-- Listbox Multiple Selection -->
+        <select name="ddl" size="4" multiple>
+            <option value="html">Horor</option>
+            <option value="css">Komedi</option>
+            <option value="list">Aksi, Komedi, Horor</option>
+        </select>
+    </div>
+</body>
+</html>
